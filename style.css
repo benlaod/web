@@ -1,0 +1,128 @@
+/*-- Mise à zéro de la marge est définition de certains détails  --*/
+html,
+body{
+	width: 100%;
+	background-color: Cornsilk;
+	padding: 0;
+	margin: 0;
+}
+/*-- Mise en place de la base de la Tête --*/
+header{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(DeepSkyBlue, dodgerblue);
+	border-radius: 1px;
+   	box-shadow: 0 0px 0 rgba(255, 255, 255, .7) inset, 
+                0 -4px 0 hsl(210, 100%, 32%) inset, 
+                0 -5px 0 hsl(210, 100%, 38%) inset, 
+                0 -6px 0 hsl(210, 100%, 44%) inset, 
+                0 -7px 0 hsl(210, 100%, 50%) inset, 
+                0 -8px 0 hsl(210, 100%, 60%) inset;
+}
+/*--- Ajustement du logo ---*/
+div.logo{
+	position: absolute;
+	display: inline;
+	color:dodgerblue;
+	text-shadow:1px 1px 0 rgba(255, 255, 255, .7),
+             	-1px -1px 0 hsl(210, 100%, 32%);
+	top:-15px;
+	left:10px;
+}
+/*--- Ajustement des liens sociaux ---*/
+nav.menu-ext{
+	position: absolute;
+	padding:0;
+	margin: 0;
+	float:right;
+	top:-10px;
+	right:10px;
+}
+nav.menu-ext ul{
+	display: table;
+}
+nav.menu-ext ul li{
+	display: table-cell;
+	padding: 2px;
+}
+nav.menu-ext ul li img:hover{
+	filter: saturate(0.4);
+        -webkit-filter: saturate(0.4);
+        -moz-filter: saturate(0.4);
+        -o-filter: saturate(0.4);
+        -ms-filter: saturate(0.4);
+}
+nav.menu-ext ul li img{
+	filter: saturate(1);
+        -webkit-filter: saturate(1);
+        -moz-filter: saturate(1);
+        -o-filter: saturate(1);
+        -ms-filter: saturate(1);
+        transition: 0.5s;
+}
+/*--- Ajustement des liens du site ---*/
+nav.menu{
+	top: 70px;
+	position: absolute;
+	width: 100%;
+}
+nav.menu ul{
+	padding:0;
+	margin: 0;
+	width: 100%;
+	display: table;
+}
+nav.menu ul li{
+	padding:0;
+	margin:0;
+	text-align: center;
+	display: table-cell;
+}
+
+nav.menu ul li a{
+	text-decoration: none;
+	color: white;
+	text-shadow:1px 1px 1px grey,
+				1px 2px 2px grey;
+
+}
+
+/*-- Mise en place de la partie principale --*/
+section{
+
+	position: absolute;
+	top:100px;
+	width: 100%;
+	bottom: 0px;
+	background-color: rgb(30,94,255);
+}
+footer{
+	background: linear-gradient(dodgerblue, DeepSkyBlue);
+	box-shadow: 0 0px 0 rgba(255, 255, 255, .7) inset, 
+                0 4px 0 hsl(210, 100%, 32%) inset, 
+                0 5px 0 hsl(210, 100%, 38%) inset, 
+                0 6px 0 hsl(210, 100%, 44%) inset, 
+                0 7px 0 hsl(210, 100%, 50%) inset, 
+                0 8px 0 hsl(210, 100%, 60%) inset;
+	position: absolute;
+	bottom: 0;
+	height: 40px;
+	width: 100%;
+	text-align: center;
+}
+footer p{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: -10px;
+	color:white;
+	text-shadow:1px 0px 0px black;
+}
+footer p a{
+	text-decoration: none;
+	color: white;
+	text-shadow:1px 1px 1px grey,
+				1px 2px 2px grey;
+}
